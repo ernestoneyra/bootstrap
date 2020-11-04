@@ -1,0 +1,26 @@
+a, small, .navbar-brand {
+    color: white;
+}
+.navbar, footer{
+    background-color: teal;
+}
+
+body{
+    background-color: rgb(235, 217, 217);
+}
+
+p{
+    font-size: 20px;
+}
+
+
+@media all and (max-width: 576px){
+.dropdown-item:hover{
+    background-color: teal;
+    color: rgb(0, 123, 255);
+}
+.dropdown-item, .dropdown-menu{
+    background-color: teal;
+    
+}
+}
