@@ -1,0 +1,53 @@
+a, small, .navbar-brand, .navbar-dark{
+    color: white; 
+}
+.navbar, footer{
+    background-color: teal;
+}
+
+body{
+    background-color: rgb(235, 217, 217);
+}
+
+p{
+    font-size: 20px;
+}
+
+
+@media all and (max-width: 576px){
+.dropdown-item:hover{
+    background-color: teal;
+    color: rgb(0, 123, 255);
+}
+.dropdown-item, .dropdown-menu{
+    background-color: teal;
+    border: none;
+   color: white;
+}
+
+}
+
+.btn:hover{
+    border: 1px solid;
+    border-radius: 3px;
+   
+}
+.btn{
+    background-color: lightgrey;
+}
+.form-control-label{
+    font-weight: bold;
+}
+
+.privacy{
+    margin-top: 22px!important;
+}
+
+.kontakta{
+    background-color: whitesmoke;
+    border: 1px solid;
+    margin: 8px auto;
+}
+.disabled{
+    color: white !important;
+}

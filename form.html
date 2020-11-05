@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bs css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Kontakta mig</h1>
+
+    <form>
+
+        <fieldset class="form-group">
+            <legend>Din information</legend>
+
+            <div class="form-group">
+                <label class="form-control-label" for="fname">Förnamn:</label>
+                <input class="form-control" type="text" id="fname" placeholder="Ditt förnamn">
+            </div><!--förnamn-->
+
+            <div class="form-group">
+                <label class="form-control-label" for="lname">Efternamn:</label>
+                <input class="form-control" type="text" id="lname" placeholder="Ditt efternamn">
+            </div><!--Efternamn-->
+
+            <div class="form-group">
+                <label class="form-control-label" for="email">E-mail adress:</label>
+                <input class="form-control" type="text" id="email" placeholder="E-mail adress"><!--form-control för rutan bred och håller sig inom container-->
+            </div><!--email adress-->
+
+        </fieldset><!--Information fieldset-->
+
+        <fieldset class="form-group">
+            <legend>Meddelande</legend>
+
+            <div class="form-group">
+                <label class="form-control-label" for="arende">Ärende:</label>
+                <select class="form-control" id="arende">
+                    <option>Välj</option><!--Ger en altenativ ruta-->
+                    <option value="nyhetsbrev">Nyhetsbrev</option>
+                    <option value="skotakatt">Skötsel av katt</option>
+                    <option value="bokamote">Boka ett möte</option>
+                    <option value="forfrogan">Förfrågan</option><!--valalternativ-->
+                </select><!---Formulär dropdown-->
+            </div><!--hela formukläret-->
+            
+            <div>
+                <label class="form-control-label" for="meddelande">Ditt meddelande:</label>
+                <textarea class="form-control" id="meddelande" placeholder="Meddelande" rows="5"></textarea><!--textare ger en ruta med text. rows är hur många rader man kan skriva-->
+            </div><!--Meddelande fältet-->
+        </fieldset>
+
+        <fieldset class="form-group privacy">
+
+            <legend>Privacy</legend>
+
+            <div class="form-group">
+                <label class="d-block">Godkänner du att vi lagrar dina personuppgifter?</label>
+
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="privaappr" value="yes" checked> Yes
+                    </label>
+                </div><!--form check. yes-->
+
+               <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="privaappr" value="no">No
+                    </label>
+                </div><!--form check. no-->
+            </div><!--form group. privacy-->
+     </fieldset>
+
+    <button class="btn btn-light" type="submit">Skicka</button>
+    </form>
+</div>
+</body>
+</html>

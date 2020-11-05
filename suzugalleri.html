@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!--Fonten för Open sans familjen från google API.-->
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"/>
+        <!--En lokal Bootstrap css fil-->
+        <link rel="stylesheet" type="text/css" href="./bs css/bootstrap.min.css">
+        <!--Min egen css fil som ändrar Bootstraps css-->
+        <link rel="stylesheet" type="text/css" href="./css/main.style.css">
+        <link rel="stylesheet" type="text/css" href="./css/catsgallericss.css">
+        <title>Suzu Galleri</title>
+    </head>
+    <!--Navbar start-->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-brand">Cats & Humans</div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myToggleNav" aria-controls="myToggleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myToggleNav">
+
+            <div class="navbar-nav ml-sm-auto">
+                <a class="nav-item nav-link" href="index.html">Top</a>
+                <a class="nav-item nav-link" href="index.html#suzu">Suzu</a>
+                <a class="nav-item nav-link" href="index.html#kuro">Kuro</a>
+                
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#galleri">Galleri</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#_">Suzu</a>
+                        <a class="dropdown-item" href="kurogalleri.html">Kuro</a>
+                    </div><!--Dropdown menu/items-->
+                </div><!--Dropdown-->
+                <a class="nav-item nav-link" href="index.html#kontakt">Kontakta mig</a>
+            </div><!--Navbar med items och links-->
+
+        </div><!--Navbar collapse-->
+
+        </div><!--Navbar container-->
+    </nav><!--Navbar-->
+<body>
+    <div>
+    <h1>Suzus Galleri</h1>
+
+</div>
+
+
+   <!--Galleri början-->
+   <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="column"> <!--Column 1-->
+
+        <a href="#suzubag">
+            <img src="./Images/Suzubag.jpg">
+        </a>
+
+        <a href="#_" class="lightbox" id="suzubag">
+            <span style="background-image: url(./Images/Suzubag.jpg);">
+            </span>
+        </a>
+        <!---->
+
+        <a href="#suzubed">
+            <img src="./Images/Suzubed.jpg">
+        </a>
+
+        <a href="#_" class="lightbox" id="suzubed">
+            <span style="background-image: url(./Images/Suzubed.jpg);"></span>
+        </a>
+       <!---->
+
+       <a href="#suzucykel">
+           <img src="./Images/Suzucykel.jpg">
+       </a>
+       <a href="#_" class="lightbox" id="suzucykel">
+           <span style="background-image: url(./Images/Suzucykel.jpg);"></span>
+       </a>
+       <!---->
+
+       <!--<a href="#suzuround">
+           <img src="./Images/Suzuround.jpg">
+       </a>
+       <a href="#_" class="lightbox" id="suzuround">
+           <span style="background-image: url(./Images/Suzuround.jpg);"></span>
+       </a>-->
+       <!---->
+
+
+      </div>
+
+      <div class="column"><!--Column 2-->
+
+        <a href="#suzuryggsäck">
+            <img src="./Images/Suzuryggsäck.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzuryggsäck">
+            <span style="background-image: url(./Images/Suzuryggsäck.jpg);"></span>
+        </a>
+        <!---->
+
+        <a href="#suzusleeping">
+            <img src="./Images/Suzusleeping.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzusleeping">
+            <span style="background-image: url(./Images/Suzusleeping.jpg);"></span>
+        </a>
+        <!---->
+
+        <a href="#suzucouch">
+            <img src="./Images/Suzucouch.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzucouch">
+            <span style="background-image: url(./Images/Suzucouch.jpg);"></span>
+        </a>
+        <!---->
+
+      </div>
+
+      <div class="column"><!--Column 3-->
+
+        <a href="#suzutree">
+            <img src="./Images/Suzutree.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzutree">
+            <span style="background-image: url(./Images/Suzutree.jpg);"></span>
+        </a>
+        <!---->
+
+        <a href="#suzuround">
+            <img src="./Images/Suzuround.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzuround">
+            <span style="background-image: url(./Images/Suzuround.jpg);"></span> 
+        </a>
+        <!---->
+
+        <a href="#suzusugoi">
+            <img src="./Images/Suzusugoi.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="suzusugoi">
+            <span style="background-image: url(./Images/Suzusugoi.jpg);"></span>
+        </a>
+
+      </div>
+
+    </div>
+
+</div><!--Galleri slutar här-->
+
+    <footer class="site-footer p-4">
+        <div class="container text-center">
+            <small>Copyright &copy; 2020 Ernesto Neyra</small>
+    
+
+    </footer>
+
+  
+    <script src="./bs js/jquery.slim.min.js"></script>
+    <script src="./bs js/popper.min.js"></script>
+    <script src="./bs js/bootstrap.min.js"></script>  
+    
+
+</body>
+</html>
