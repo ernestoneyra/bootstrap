@@ -1,3 +1,18 @@
+
+hr{
+    size: 0.3135rem;
+    
+  }
+  
+  body, .my-4, .bg-light{
+    background-color: rgb(235, 217, 217);
+  }
+  
+  .introduktion{
+  font-family: open sans-serif;
+  font-size: 1.5rem;
+  }
+
 a, small, .navbar-brand, .navbar-dark{
     color: white; 
 }

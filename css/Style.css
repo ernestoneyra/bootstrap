@@ -1,0 +1,230 @@
+/*denna klassen bestämmer hur den överesta raden ser ut. header ul li är
+kopplad till den här klassen.*/
+.navbar {
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  
+}
+/*Den här delen är hela delen som har en blå bakgrund.  här bestäms bakgrundfärgen,
+mellanrummet (padding) till nästa del*/
+header {
+  background: rgb(96, 96, 241);
+  position: relative;
+  padding-bottom: 15px;
+  max-width: 1210px;
+  margin: auto;
+ 
+}
+/* detta ändrar runt knapparna.*/
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* detta ändrar list items*/
+header ul li {
+  float: left;
+  background-color: none;
+  display: block;
+  padding: 0px 10px;
+  color: white;
+}
+/* det här är inställnigarna för bilden. */
+header img {
+  max-width: 20%;
+  height: auto;
+  /*max-height: 300px;*/
+  position: absolute; /*Bildens position kontrolleras härifrån via position.*/
+  top: 22px;
+  right: 0px;
+  border: 4px dotted;
+  border-color: black;
+}
+/* detta ändrar texten i headern.*/
+.intro {
+  width: 75%;
+  margin: 0px 20px;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 17px;
+}
+/* detta är "Front-end developer" texten.
+b betyder att den blir automatisk fet, man slipper lägga till stilen i css koden.*/
+header b {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  margin-left: 0px;
+  color: aliceblue;
+}
+/* denna ändrar endst h1 i headern, inte i footer för att den pekar till h1 i headern.*/
+header h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  color: rgb(92, 16, 16);
+  font-style: italic;
+}
+/*Den här koden bestämmer den andra delen, med den gröna bakgrunden.*/
+.intressen {
+  background: rgb(88, 161, 88);
+  padding: 5px;
+
+  max-width: 1200px;
+  margin: auto;
+}
+/* den koden ändrar utseendet på knapparna.*/
+a button {
+  background-color: yellow;
+  color: green;
+  border-radius: 10px;
+}
+/*Vad som händer med a när musen står över länken*/
+a:hover {
+  background-color: grey;
+}
+/*vad som händer med a efter man har tryckt på länken.*/
+a:visited {
+  color: blueviolet;
+}
+/* vilken färg a får. i detta fall länken till videos.*/
+a {
+  color: red;
+}
+/* h2 i section delen. "Mina intressen.*/
+section h2 {
+  margin-left: 20px;
+  color: aqua;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* den här koden gör sidan helt responsiv utan att man behöver använda @media queries.
+Jag tog inte med den eftersom jag kopierade in den från https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/.*/
+/*.auto-grid{
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 3rem;
+  list-style-type: none;
+  
+  
+}*/
+/* ändrar texten under li till fet.*/
+li {
+  font-weight: bold;
+}
+/* skapar en flex-box. i detta fall har jag lagt in 3st boxar i den.*/
+.flex-box {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/*det är den första boxen i flex-griden ovan.*/
+.flex-item1 {
+  color: rgb(124, 101, 59);
+  border: 1px solid;
+  border-color: red;
+  padding: 5px;
+  width: 300px;
+  text-align: left;
+}
+/*detta är den andra boxen i flex-griden ovan.*/
+.flex-item2 {
+  width: 300px;
+  border: 1px solid;
+  padding: 5px;
+  border-color: yellow;
+  text-align: left;
+}
+/*detta är den tredje boxen i flexgriden ovan.*/
+.flex-item3 {
+  color: white; /*ändrar färg på texten.*/
+  border: 1px solid; /*lägger till en 1px ram som är hel.*/
+  padding: 5px; /*5px vägg mellan texten och ramen.*/
+  border-color: white;/* ramfärgen till vit.*/
+  text-align: left; /* placering av texten.*/
+  width: 300px; /* hur stor boxen ska vara*/
+}
+/*gör sidan responsiv. ändrar utseendet när storleken minskas till 600px.
+Ändringarna som utförs är dem i .flex-box klassen. */
+@media screen and (max-width: 600px) {
+  .flex-box {
+    width: 75%;
+    float: none;
+  }
+}
+/*tredje rubriken efter h1 och h2. det är favorit ... texten*/
+h3 {
+  text-align: center;
+  color: rgb(110, 57, 57);
+  border: 1px solid;
+}
+/* den texten inom <p></p> elementen i section endast.*/
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* klassen är en grid. med en repeat horizontella rader och 2 auto vertikala rader.*/
+
+/* första grid item, Det är "Kontakta mig".*/
+.grid-item1 {
+  grid-column-start: 1;/* start betyder vart den börjar.placering på den översta horizontelle raden. börjar på punkt 1*/
+  grid-column-end: 2; /* avslutar på rad 2. end betyder var den slutar.*/
+}
+/* andra grid itemet*/
+.grid-item2 {
+  grid-column-start: 1;
+  grid-row-start: 2; /* placering på rad 2 av den vertikala raden.*/
+}
+.grid-item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+.grid-item4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+/* här andras .grid-container, .grid-item1 och .grid-item2 enligt sidans storlek, 
+i detta fall när skärmen är max 600px.*/
+@media screen and (max-width: 600px) {
+  .grid-container {
+    gap: 0px;
+  }
+  .grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid-item2 {
+    padding-right: 2px;
+    grid-column-start: 2;
+  }
+  .grid-item3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+}
+/*koden för kroppen/bakgrunden. endast ändrat bakgrundsfärgen till grått.*/
+body {
+  background-color: rgb(63, 63, 63);
+}
+/* detta är klassen för sista delen. den röda delen.*/
+.random {
+  background: rgb(124, 6, 6);
+  padding: 5px;
+
+  max-width: 1200px; /* anger max bredden som den ska ha.*/
+  margin: auto; /* margin sattes på auto så den får bestämma storleken på egen hand.*/
+}
+/* det här vad en id. ville ha minst 1 i koden. Den kontrollerar utseendet på formuläter.*/
+#kontakt {
+  background-color: rgb(209, 159, 66);
+  border: 4px solid;
+  border-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* det här ändrar utseendet på
+  texten, fonten som används.*/
+  font-size: 12px; /* storleken på fonten/texten.*/
+}
